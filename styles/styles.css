@@ -1,0 +1,272 @@
+/* ALL PAGES */
+a {
+  outline: 0;
+  text-decoration: none;
+  font-family: 'Fira Sans Extra Condensed', serif;
+}
+
+p {
+  font-size: 2vw;
+  padding: 0 10%;
+}
+
+h1{
+  font-family: 'Fjalla One', serif;
+  padding-top: 20px;
+  font-size: 4vw;
+}
+
+h2{
+  font-family: 'Petit Formal Script', serif;
+  color: #B31B1B;
+  font-size: 2vw;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.content{
+  display: inline-block;
+  text-align: center;
+}
+
+#banner {
+  width: 100%;
+  padding: 0.1px;
+  height: auto;
+  font-family: 'Fira Sans Extra Condensed', serif;
+}
+
+#banner h1{
+  font-size: 4vw;
+  padding-left: 4vw;
+  margin: 10px 0;
+  float: left;
+}
+
+#logo{
+  float: right;
+  width: 35vw;
+  padding: 30px 3.5vw 0 0;
+}
+
+.nav{
+  position: relative;
+  width: 100%;
+  background-color: #B31B1B;
+  color: white;
+  overflow: hidden;
+  z-index: 2;
+  text-align: center;
+}
+
+.nav ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.nav li{
+  margin: 0 2vw;
+  display: inline-block;
+  text-align: center;
+  padding: 0px;
+}
+
+.nav a{
+  font-size: 2vw;
+  background-color: inherit;
+  color: #eee;
+}
+
+.nav a:hover {
+  background-color: inherit;
+  color: gray;
+}
+
+/* HOMEPAGE */
+
+.slide_img {
+  display: none;
+}
+
+#about{
+  margin-top: -5px;
+  background-color: #eee;
+  color: black;
+  border-top: 7px #B31B1B solid;
+  border-bottom: 7px #B31B1B solid;
+}
+
+#connected{
+  display: flex;
+}
+
+#cal_frame{
+  width: 85%;
+  height: 40vw;
+  padding-bottom: 20px;
+  border: 0;
+  margin: 0px;
+}
+
+#fb{
+  margin: 30px 3% 0 0;
+}
+
+#fb_frame{
+  height: 90%;
+  border-radius: 20px;
+}
+
+.board{
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #eeeeee;
+  color: black;
+  padding: 0 5% 40px 5%;
+}
+
+.member{
+  display: inline-block;
+  padding: 0.5vw;
+  font-size: 2vw;
+  vertical-align:top
+
+}
+.member p{
+  font-size: 1.5vw;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.member img{
+  border-radius: 10px;
+  width: 20vw;
+  max-width: 230px;
+  /* min-width: 150px; */
+}
+
+/* ABOUT PAGE  */
+#mission{
+  background-color: #eee;
+  padding: 8vw 0 100px 0;
+  margin-top: -4px;
+  border-top: 7px #B31B1B solid;
+}
+
+#mission h1{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+#mission a{
+  font-size: 3vw;
+  width: 100vw;
+}
+
+#space_img img{
+  width: 20%;
+  margin-top: 8vw;
+  display: block;
+  float: left;
+  border-top: 7px #B31B1B solid;
+}
+
+#mission_img img{
+  width: 33.3333%;
+  height: 30vw;
+  margin: 8vw 0;
+  object-fit: cover;
+  display: block;
+  float: left;
+  border-bottom: 7px #B31B1B solid;
+  border-top: 7px #B31B1B solid;
+}
+
+/* BOARD MEMBERS PAGE */
+
+#prev_board{
+  background-color: #eee;
+  padding: 2vw 0 10vw 0;
+}
+
+#prev_board img{
+  max-width: 200px;
+}
+
+#blank{
+  height: 10vw;
+  width: 20vw;
+  max-height: 100px;
+  max-width: 200px;
+}
+
+#years p, #years a{
+  font-size: 3vw;
+  color: black;
+}
+
+#years a:hover{
+  color: #B31B1B;
+}
+
+
+/* GALLERY PAGE  */
+#gallery img{
+  display: block;
+  float: left;
+  width: 25%;
+  height: 200px;
+  object-fit: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* CONTACT PAGE  */
+#contact{
+  background-color: #eee;
+  padding-bottom: 4vw;
+  top: auto;
+  padding-top: 2vw;
+  border-top: 7px #B31B1B solid;
+  border-bottom: 7px #B31B1B solid;
+}
+
+#hollister_img{
+  width: 100%;
+  display: block;
+}
+
+/* FOOTER */
+footer {
+	left: 0;
+	right: 0;
+  margin: 0;
+  font-size: 25px;
+	padding-top: 0.1vw;
+	background-color: #B31B1B;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+  bottom: 0px;
+  color: white;
+}
+
+footer p{
+  /* font-size: 1.5vw; */
+  font-family: 'Fira Sans Extra Condensed', serif;
+  text-align: center;
+}
+
+/* 1024 */
