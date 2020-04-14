@@ -1,272 +1,563 @@
 /* ALL PAGES */
+
 a {
-  outline: 0;
-  text-decoration: none;
-  font-family: 'Fira Sans Extra Condensed', serif;
+    outline: 0;
+    text-decoration: none;
+    font-family: 'Fira Sans Extra Condensed', serif;
 }
 
 p {
-  font-size: 2vw;
-  padding: 0 10%;
+    font-size: 20px;
+    padding: 0 10%;
 }
 
-h1{
-  font-family: 'Fjalla One', serif;
-  padding-top: 20px;
-  font-size: 4vw;
+h1 {
+    font-family: 'Fira Sans Extra Condensed', serif;
+    padding-top: 20px;
+    font-size: 40px;
 }
 
-h2{
-  font-family: 'Petit Formal Script', serif;
-  color: #B31B1B;
-  font-size: 2vw;
+h2 {
+    font-family: 'Petit Formal Script', serif;
+    color: #B31B1B;
+    font-size: 2vw;
 }
 
-img{
-  max-width: 100%;
+img {
+    max-width: 100%;
 }
 
-body{
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  margin: 0px;
-  overflow-x: hidden;
+body {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+    background-color: #2b2d2f;
 }
 
-.content{
-  display: inline-block;
-  text-align: center;
+.content {
+    display: inline-block;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #B31B1B;
 }
 
 #banner {
-  width: 100%;
-  padding: 0.1px;
-  height: auto;
-  font-family: 'Fira Sans Extra Condensed', serif;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.1px;
+    height: 85px;
+    z-index: 2;
+    background-color: white !important;
 }
 
-#banner h1{
-  font-size: 4vw;
-  padding-left: 4vw;
-  margin: 10px 0;
-  float: left;
+#banner h1 {
+    font-size: 37px;
+    padding-left: 30px;
+    margin: 10px 0;
+    float: left;
+    font-family: 'Fira Sans Extra Condensed', serif;
 }
 
-#logo{
-  float: right;
-  width: 35vw;
-  padding: 30px 3.5vw 0 0;
+#logo {
+    float: right;
+    width: 350px;
+    padding: 30px 30px 0 0;
 }
 
-.nav{
-  position: relative;
-  width: 100%;
-  background-color: #B31B1B;
-  color: white;
-  overflow: hidden;
-  z-index: 2;
-  text-align: center;
+#nav h1 {
+    display: none;
 }
 
-.nav ul{
-  list-style-type: none;
-  text-align: center;
-  margin: 10px 0;
+#threeline {
+    display: none;
 }
 
-.nav li{
-  margin: 0 2vw;
-  display: inline-block;
-  text-align: center;
-  padding: 0px;
+#nav {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #B31B1B;
+    color: white;
+    overflow: hidden;
+    z-index: 2;
+    text-align: center;
 }
 
-.nav a{
-  font-size: 2vw;
-  background-color: inherit;
-  color: #eee;
+#nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 10px 0;
 }
 
-.nav a:hover {
-  background-color: inherit;
-  color: gray;
+#nav li {
+    margin: 0 2vw;
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
 }
+
+#nav a {
+    font-size: 23px;
+    background-color: inherit;
+    color: #eee;
+}
+
+#nav a:hover {
+    background-color: inherit;
+    color: gray;
+}
+
+a .nactive {
+    color: pink;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+#modal ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 15vh 0;
+}
+
+#modal li {
+    margin: 0 2vw;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#modal a {
+    font-size: 45px;
+    background-color: inherit;
+    color: black;
+}
+
+#modal a:hover {
+    color: #B31B1B;
+}
+
+#close {
+    position: absolute;
+    top: -3px;
+    right: 20px;
+    font-size: 50px;
+}
+
+#close:hover {
+    color: #B31B1B;
+}
+
 
 /* HOMEPAGE */
 
 .slide_img {
-  display: none;
+    display: none;
 }
 
-#about{
-  margin-top: -5px;
-  background-color: #eee;
-  color: black;
-  border-top: 7px #B31B1B solid;
-  border-bottom: 7px #B31B1B solid;
+.slide_img img {
+    max-height: 83vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 25%;
 }
 
-#connected{
-  display: flex;
+#about {
+    margin-top: -5px;
+    background-color: #eee;
+    padding: 25px 0;
 }
 
-#cal_frame{
-  width: 85%;
-  height: 40vw;
-  padding-bottom: 20px;
-  border: 0;
-  margin: 0px;
+#connected {
+    background-color: white;
+    display: flex;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#fb{
-  margin: 30px 3% 0 0;
+#cal_frame {
+    width: 85%;
+    height: 40vw;
+    padding-bottom: 20px;
+    border: 0;
+    margin: 0px;
 }
 
-#fb_frame{
-  height: 90%;
-  border-radius: 20px;
+#fb {
+    margin: 0 3% 0 0;
 }
 
-.board{
-  display: inline-block;
-  margin-top: 30px;
-  background-color: #eeeeee;
-  color: black;
-  padding: 0 5% 40px 5%;
+#fb_frame {
+    height: 80%;
+    border-radius: 20px;
 }
 
-.member{
-  display: inline-block;
-  padding: 0.5vw;
-  font-size: 2vw;
-  vertical-align:top
-
-}
-.member p{
-  font-size: 1.5vw;
-  padding: 0px;
-  margin: 0px;
-}
-
-
-.member img{
-  border-radius: 10px;
-  width: 20vw;
-  max-width: 230px;
-  /* min-width: 150px; */
-}
 
 /* ABOUT PAGE  */
-#mission{
-  background-color: #eee;
-  padding: 8vw 0 100px 0;
-  margin-top: -4px;
-  border-top: 7px #B31B1B solid;
+
+#mission {
+    background-color: #eee;
+    padding: 30px 0 30px 0;
+    margin-top: -4px;
 }
 
-#mission h1{
-  padding-top: 0px;
-  margin-top: 0px;
+#mission h1 {
+    padding-top: 10px;
+    margin-top: 0px;
 }
 
-#mission a{
-  font-size: 3vw;
-  width: 100vw;
+#mission a {
+    font-size: 24px;
+    width: 100%;
 }
 
-#space_img img{
-  width: 20%;
-  margin-top: 8vw;
-  display: block;
-  float: left;
-  border-top: 7px #B31B1B solid;
+#space_img img {
+    width: 20%;
+    margin-top: 30px;
+    display: block;
+    float: left;
+    padding: 0px;
 }
 
-#mission_img img{
-  width: 33.3333%;
-  height: 30vw;
-  margin: 8vw 0;
-  object-fit: cover;
-  display: block;
-  float: left;
-  border-bottom: 7px #B31B1B solid;
-  border-top: 7px #B31B1B solid;
+#mission_img img {
+    width: 33.3333%;
+    height: 30vw;
+    margin: 30px 0;
+    object-fit: cover;
+    display: block;
+    float: left;
 }
+
 
 /* BOARD MEMBERS PAGE */
 
-#prev_board{
-  background-color: #eee;
-  padding: 2vw 0 10vw 0;
+#prev_board {
+    display: none;
 }
 
-#prev_board img{
-  max-width: 200px;
+#year_nav {
+    background-color: #aaaaaa;
+    padding: 10px;
 }
 
-#blank{
-  height: 10vw;
-  width: 20vw;
-  max-height: 100px;
-  max-width: 200px;
+#year_nav button {
+    border: none;
+    /* background-color: #eee; */
+    font-size: 20px;
+    width: 160px;
+    margin: 2px;
 }
 
-#years p, #years a{
-  font-size: 3vw;
-  color: black;
+#year_nav .active {
+    background-color: pink;
 }
 
-#years a:hover{
-  color: #B31B1B;
+#window {
+    background-color: white;
+    padding: 30px 0;
+}
+
+#window img {
+    min-width: 130px;
+    max-width: 200px;
+}
+
+.member {
+    display: inline-block;
+    padding: 0.5vw;
+    font-size: 20px;
+    vertical-align: top
+}
+
+.member p {
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.member img {
+    border-radius: 10px;
+    width: 230px;
+}
+
+#years p {
+    display: inline;
+    font-size: 25px;
+    padding: 20px 10px;
+    margin-top: 10px;
+}
+
+#years p .active {
+    color: pink;
 }
 
 
 /* GALLERY PAGE  */
-#gallery img{
-  display: block;
-  float: left;
-  width: 25%;
-  height: 200px;
-  object-fit: cover;
-  margin: 0px;
-  padding: 0px;
+
+#gallery {
+    display: inline-block;
+    font-size: 0;
+    overflow: hidden;
 }
+
+.gal_block {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.gal_block .gal_text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30vw;
+    max-height: 300px;
+    visibility: hidden;
+}
+
+.gal_text p {
+    position: relative;
+    font-family: 'Fira Sans Extra Condensed', serif;
+    font-size: 30px;
+    top: 28%;
+    text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.gal_img {
+    display: block;
+}
+
+.gal_block:hover .gal_text {
+    visibility: visible;
+    display: block;
+}
+
+#gallery img {
+    width: 100%;
+    height: 30vw;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.gal_modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    max-width: 1200px;
+    height: 100vh;
+    text-align: center;
+    background: #eee;
+}
+
+.gal_modal h1 {
+    font-size: 25px;
+}
+
 
 /* CONTACT PAGE  */
-#contact{
-  background-color: #eee;
-  padding-bottom: 4vw;
-  top: auto;
-  padding-top: 2vw;
-  border-top: 7px #B31B1B solid;
-  border-bottom: 7px #B31B1B solid;
+
+#contact {
+    background-color: #eee;
+    padding: 10px 0 30px 0;
+    margin-top: -20px;
 }
 
-#hollister_img{
-  width: 100%;
-  display: block;
+.hollister_img {
+    width: 100%;
+    display: block;
 }
+
 
 /* FOOTER */
+
 footer {
-	left: 0;
-	right: 0;
-  margin: 0;
-  font-size: 25px;
-	padding-top: 0.1vw;
-	background-color: #B31B1B;
-	text-align: center;
-	width: 100%;
-	display: inline-block;
-  bottom: 0px;
-  color: white;
+    left: 0;
+    right: 0;
+    margin: 0;
+    font-size: 25px;
+    padding-top: 0.1vw;
+    background-color: #B31B1B;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    bottom: 0px;
+    color: white;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-footer p{
-  /* font-size: 1.5vw; */
-  font-family: 'Fira Sans Extra Condensed', serif;
-  text-align: center;
+footer p {
+    /* font-size: 1.5vw; */
+    font-family: 'Fira Sans Extra Condensed', serif;
+    text-align: center;
 }
 
-/* 1024 */
+
+/* 768px */
+
+@media only screen and (max-width: 768px) {
+    #connected {
+        display: inline-block;
+    }
+
+    #banner {
+        display: none;
+    }
+
+    #nav ul {
+        display: none;
+    }
+
+    #nav h1 {
+        display: inline;
+        float: left;
+        font-size: 22px;
+        padding: 0px;
+        margin-left: 20px;
+    }
+
+    #threeline {
+        display: inline;
+        text-shadow: 2px 2px #800000;
+        float: right;
+        font-size: 30px;
+        padding-top: 5px;
+        padding-right: 20px;
+    }
+
+    #threeline:hover {
+        color: gray;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    #about {
+        border: 0px;
+        padding: 10px 0px;
+    }
+
+    .fb {
+        align-items: center;
+    }
+
+    #cal_frame {
+        width: 95%;
+        height: 500px;
+        padding-bottom: 20px;
+        border: 0;
+        margin: 0px;
+    }
+
+    #fb_frame {
+        height: 125px;
+    }
+
+    .board {
+        display: none;
+    }
+
+    #mission {
+        height: auto;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    #aboutimg {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #space_img, #mission_img {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: block;
+        padding: 8vw 0;
+        font-size: 0;
+    }
+
+    #space_img {
+        padding-bottom: 0px !important;
+        margin-bottom: -8px;
+    }
+
+    .space, .mission {
+        display: inline-block;
+    }
+
+    #space_img::-webkit-scrollbar, #mission_img::-webkit-scrollbar {
+        display: none;
+    }
+
+    #space_img img, #mission_img img {
+        width: 100vw;
+        height: 50vw;
+        object-fit: cover;
+        border: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #years a, #years p {
+        font-size: 20px;
+    }
+
+    .hollister_img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .member p {
+        font-size: 16px;
+    }
+
+    .gal_block .gal_text {
+        visibility: visible;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .gal_text p {
+        font-family: 'Fira Sans Extra Condensed', serif;
+        top: -30px;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .gal_block {
+        width: 100%;
+    }
+}
