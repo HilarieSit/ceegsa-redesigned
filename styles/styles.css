@@ -9,12 +9,13 @@ a {
 p {
     font-size: 20px;
     padding: 0 10%;
+    font-family: 'Lato', sans-serif;
 }
 
 h1 {
     font-family: 'Fira Sans Extra Condensed', serif;
     padding-top: 20px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 h2 {
@@ -43,7 +44,7 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #B31B1B;
+    /* background-color: #B31B1B; */
 }
 
 #banner {
@@ -52,15 +53,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 0.1px;
-    height: 85px;
+    height: 75px;
     z-index: 2;
     background-color: white !important;
 }
 
 #banner h1 {
     font-size: 37px;
-    padding-left: 30px;
-    margin: 10px 0;
+    padding-left: 10px;
+    margin: -2px 0 0 0;
     float: left;
     font-family: 'Fira Sans Extra Condensed', serif;
 }
@@ -68,11 +69,18 @@ body {
 #logo {
     float: right;
     width: 350px;
-    padding: 30px 30px 0 0;
+    padding: 20px 30px 0 0;
+}
+
+#ceegsalogo {
+    float: left;
+    width: 65px;
+    padding: 5px 0 0 15px;
 }
 
 #nav h1 {
     display: none;
+    font-size: 40px;
 }
 
 #threeline {
@@ -172,40 +180,73 @@ a .nactive {
 }
 
 .slide_img img {
-    max-height: 83vh;
+    max-height: 84vh;
     width: 100%;
     object-fit: cover;
-    object-position: 50% 25%;
+    object-position: 50% 0%;
 }
 
 #about {
-    margin-top: -5px;
-    background-color: #eee;
-    padding: 25px 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+
+#aboutclose {
+  font-size: 35px;
+  padding: 0px 15px;
+  float: right;
+}
+
+.homepagelinks{
+  color: black;
+}
+
+.homepagelinks:hover{
+  color: #B31B1B;
 }
 
 #connected {
     background-color: white;
     display: flex;
-    padding-bottom: 60px;
+    justify-content: center !important;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -5px;
+}
+
+#cal{
+  padding: 0 3% 60px 3%;
+  margin: 0;
+  height: auto;
+  background-color: white;
 }
 
 #cal_frame {
-    width: 85%;
-    height: 40vw;
-    padding-bottom: 20px;
-    border: 0;
-    margin: 0px;
+  width: 100%;
+  height: 40vw;
+  padding-bottom: 20px;
+  border: 0;
+  margin: 0;
 }
 
 #fb {
-    margin: 0 3% 0 0;
+    width: 340px;
+    padding: 0 3% 60px 3%;
+    background-color: #eee;
+    border-left: solid 2px #ddd;
 }
 
 #fb_frame {
-    height: 80%;
+    height: 77%;
     border-radius: 20px;
 }
 
@@ -228,23 +269,25 @@ a .nactive {
     width: 100%;
 }
 
+#space_img::-webkit-scrollbar, #mission_img::-webkit-scrollbar {
+    display: none;
+}
+
+#mission_img, #space_img {
+  display: flex;
+}
+
 #space_img img {
-    width: 20%;
-    margin-top: 30px;
-    display: block;
-    float: left;
+    margin: 40px 0 -35px 0;
     padding: 0px;
 }
 
 #mission_img img {
-    width: 33.3333%;
     height: 30vw;
-    margin: 30px 0;
+    margin: 40px 0;
     object-fit: cover;
     display: block;
-    float: left;
 }
-
 
 /* BOARD MEMBERS PAGE */
 
@@ -266,7 +309,7 @@ a .nactive {
 }
 
 #year_nav .active {
-    background-color: pink;
+    background-color: #ffcccb;
 }
 
 #window {
@@ -287,7 +330,7 @@ a .nactive {
 }
 
 .member p {
-    font-size: 20px;
+    font-size: 18px;
     padding: 0px;
     margin: 0px;
 }
@@ -466,23 +509,43 @@ footer p {
 
     #about {
         border: 0px;
-        padding: 10px 0px;
+        position: relative;
+        top: 0px;
+        margin-top: -5px;
+        color: black;
+        background-color: #eee;
+        display: block;
+    }
+
+    #aboutclose {
+      display: none;
     }
 
     .fb {
         align-items: center;
     }
 
+    #cal{
+      padding-bottom: 20px;
+    }
+
     #cal_frame {
         width: 95%;
         height: 500px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         border: 0;
         margin: 0px;
     }
 
     #fb_frame {
         height: 125px;
+    }
+
+    #fb {
+        width: 100%;
+        padding: 2px 0 60px 0;
+        background-color: #eee;
+        border: 0
     }
 
     .board {
@@ -513,18 +576,15 @@ footer p {
     #space_img {
         padding-bottom: 0px !important;
         margin-bottom: -8px;
+        align-items: center;
     }
 
     .space, .mission {
         display: inline-block;
     }
 
-    #space_img::-webkit-scrollbar, #mission_img::-webkit-scrollbar {
-        display: none;
-    }
-
     #space_img img, #mission_img img {
-        width: 100vw;
+        width: 70vw;
         height: 50vw;
         object-fit: cover;
         border: 0px;
@@ -560,4 +620,8 @@ footer p {
     .gal_block {
         width: 100%;
     }
+
+    /* .gal_block img {
+      height: 25vh;
+    } */
 }

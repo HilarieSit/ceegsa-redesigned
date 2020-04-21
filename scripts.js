@@ -10,6 +10,7 @@ $(document).ready(function() {
     $('#year_nav .2019').addClass('active');
     var starttext = $('#2019 .member_container').html();
     $("#window").append(starttext);
+    $("#about").delay(1000).slideDown('slow');
 });
 
 $(document).on('click', 'button', function(event) {
@@ -39,6 +40,7 @@ function showImg() {
     images[index].style.display = "block";
     setTimeout(showImg, 4000);
 }
+
 $(document).on('click', '#threeline', function(event) {
     event.stopPropagation();
     event.stopImmediatePropagation();
@@ -54,6 +56,12 @@ $(document).on('click', '#close', function(event) {
     $('#threeline').show();
 });
 
+$(document).on('click', '#aboutclose', function(event) {
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    $('#about').fadeOut();
+});
+
 if ($(window).height() < 420) {
     $('#modal a').css('font-size', '30px');
 }
@@ -62,6 +70,7 @@ $(window).on('resize', function() {
     if ($(window).width() > 768) {
         $('#modal').hide();
         $('#threeline').hide();
+        $("#about").delay(1000).slideDown('slow');
     } else {
         $('#threeline').show();
     }

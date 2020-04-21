@@ -11,15 +11,18 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet">
 </head>
 
 <body onload="showImg();">
     <div id="header">
     </div>
-
+    
+    <!--end of about-->
     <div class="content">
-        <div class="slideshow_container">
+      <div class="slideshow_container">
             <div class="slide_img">
                 <img src="images/home/symposium.jpg" alt="symposium">
             </div>
@@ -28,34 +31,36 @@
                 <img src="images/home/winetour.jpg" alt="winetour">
             </div>
             <!--end of mySlides fade-->
-            <div class="slide_img">
-                <img src="images/home/light.jpg" alt="light">
-            </div>
-            <!--end of mySlides fade-->
+
             <div class="slide_img">
                 <img src="images/home/disc.JPG" alt="disc">
             </div>
             <!--end of mySlides fade-->
+              <div class="slide_img">
+                  <img src="images/home/light.jpg" alt="light">
+              </div>
+              <!--end of mySlides fade-->
         </div>
         <!--end of slideshow-container-->
 
         <div id="about">
-            <p> Welcome! We are the <b> Civil and Environmental Engineering Graduate Student Association </b> at Cornell University. CEE GSA organizes social, cultural, and professional events for graduate students. Our mission is to foster communication
-                among graduate students from different concentrations, staff and faculty, and to provide a forum for the free exchange of ideas. </p>
+          <span id="aboutclose">&times;</span>
+            <p> Welcome! We are the Civil and Environmental Engineering Graduate Student Association at Cornell University.
+              We organize social, cultural, and professional events for graduate students to help foster communication and build meaningful connections. </p>
         </div>
-        <!--end of about-->
 
         <div id="connected">
             <div id="cal">
-                <h1> Event Calendar </h1>
-                <p> Come check out our many events, such as Bagel Tuesday, Donut Friday, lightning talks, socials, seminars, and many more. </p>
+                <a class="homepagelinks" href="gallery.html"><h1> Events &rarr; </h1></a>
+                <p> Come check out our events</a>, such as Bagel Tuesday, Donut Friday, lightning talks, socials, seminars, and many more. </p>
                 <iframe id="cal_frame" src="https://calendar.google.com/calendar/embed?src=cornell.edu_c19j5jhu8u5kjd8hr72orcaqc0%40group.calendar.google.com&ctz=America%2FNew_York"></iframe>
-                <p>Get updates by adding our Google Calendar (click the +GoogleCalendar button in the bottom righthand corner) or importing our calendar into iCal with this <a href="https://www.google.com/calendar/ical/cornell.edu_c19j5jhu8u5kjd8hr72orcaqc0%40group.calendar.google.com/public/basic.ics">link</a>                    </p>
+                <p>Get updates by adding our Google Calendar (click the +GoogleCalendar button in the bottom righthand corner) or importing our calendar into iCal with this <a href="https://www.google.com/calendar/ical/cornell.edu_c19j5jhu8u5kjd8hr72orcaqc0%40group.calendar.google.com/public/basic.ics">link</a></p>
             </div>
             <!--end of cal-->
 
             <div id="fb">
-                <h1> Facebook </h1>
+                <a class="homepagelinks" href="contact.html"><h1> Connect with us &rarr; </h1></a>
+                <p> Like our page to get event notifications through Facebook</p>
                 <iframe id="fb_frame" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCornellCEEGSA%2F&tabs=timeline&width=340&height=1000&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340"
                     height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
             </div>
