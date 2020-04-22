@@ -755,7 +755,7 @@ footer p {
     #leftarrow, #rightarrow{
       display: none;
       position: fixed;
-      top: 80vh;
+      top: 70vh;
       width: 40px;
       height: 40px;
       z-index: 3;
