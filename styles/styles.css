@@ -305,6 +305,7 @@ a .nactive {
     padding-bottom: 0 !important;
     margin-bottom: 0;
     align-items: center;
+    scrollbar-width: none;
 }
 
 .space, .mission {
