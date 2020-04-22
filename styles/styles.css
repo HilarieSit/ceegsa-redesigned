@@ -20,8 +20,9 @@ h1 {
 
 button {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
-    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
-    outline: none !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: none !important;
+  cursor: pointer;
 }
 
 
@@ -86,6 +87,7 @@ body {
 
 #threeline {
     display: none;
+    cursor: pointer;
 }
 
 #nav {
@@ -118,6 +120,7 @@ body {
     font-size: 23px;
     background-color: inherit;
     color: #eee;
+    cursor: pointer;
 }
 
 #nav a:hover {
@@ -156,6 +159,7 @@ a .nactive {
     font-size: 45px;
     background-color: inherit;
     color: black;
+    cursor: pointer;
 }
 
 #modal a:hover {
@@ -167,6 +171,7 @@ a .nactive {
     top: -3px;
     right: 20px;
     font-size: 50px;
+    cursor: pointer;
 }
 
 #close:hover {
@@ -208,6 +213,7 @@ a .nactive {
   color: white;
   border: none;
   background-color: rgba(0,0,0,0);
+  cursor: pointer;
 }
 
 #aboutclose:hover{
@@ -338,10 +344,12 @@ a .nactive {
     font-size: 20px;
     width: 160px;
     margin: 2px;
+    cursor: pointer;
 }
 
 #year_nav .active {
     background-color: #ffcccb;
+    cursor: pointer;
 }
 
 #window {
@@ -413,6 +421,7 @@ a .nactive {
     width: 100%;
     height: auto;
     margin: 5px;
+    cursor: pointer;
 }
 
 .lozad{
@@ -450,6 +459,7 @@ a .nactive {
   top: 0px;
   right: 15px;
   font-size: 70px;
+  cursor: pointer;
 }
 
 #gal_close:hover{
@@ -482,6 +492,7 @@ a .nactive {
   height: 50px;
   z-index: 3;
   transform: rotate(45deg);
+  cursor: pointer;
 }
 
 #leftarrow p, #rightarrow p{
@@ -573,6 +584,7 @@ footer p {
         font-size: 30px;
         padding-top: 5px;
         padding-right: 20px;
+        cursor: pointer;
     }
 
     #threeline:hover {
@@ -599,6 +611,7 @@ footer p {
 
     #aboutclose {
       display: none;
+      cursor: pointer;
     }
 
     .fb {
@@ -695,6 +708,7 @@ footer p {
     .lozad{
       margin: 0 !important;
       padding: 0;
+      cursor: pointer;
     }
 
     .label{
