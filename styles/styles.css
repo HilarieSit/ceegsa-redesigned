@@ -35,6 +35,7 @@ body {
     margin: 0px;
     overflow-x: hidden;
     background-color: #2b2d2f;
+    scrollbar-width: none;
 }
 
 .content {
@@ -254,7 +255,6 @@ a .nactive {
 
 #fb_frame {
     height: 77%;
-    border-radius: 20px;
 }
 
 
@@ -481,7 +481,7 @@ a .nactive {
 .label{
   display: inline-block;
   background-color: #ccc;
-  padding: 0;
+  padding: 3px 0;
   margin: 5px 5px -5px 5px;
   height: auto;
   width: 100%;
@@ -523,6 +523,7 @@ footer {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    z-index: 2;
 }
 
 footer p {
