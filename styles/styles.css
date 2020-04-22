@@ -265,7 +265,7 @@ a .nactive {
 
 #mission {
     background-color: #eee;
-    padding: 30px 0;
+    padding-top: 30px;
     margin-top: -4px;
 }
 
@@ -646,7 +646,7 @@ footer p {
 
     #space_img {
         padding-bottom: 0px !important;
-        margin-bottom: -20px !important;
+        margin-bottom: 0px !important;
         align-items: center;
     }
 
