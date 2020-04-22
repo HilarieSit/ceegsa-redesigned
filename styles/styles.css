@@ -206,7 +206,7 @@ a .nactive {
   float: right;
   color: white;
   border: none;
-  background-color: rgba(0,0,0,0)
+  background-color: rgba(0,0,0,0);
 }
 
 #aboutclose:hover{
