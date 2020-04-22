@@ -18,11 +18,12 @@ h1 {
     font-size: 30px;
 }
 
-h2 {
-    font-family: 'Petit Formal Script', serif;
-    color: #B31B1B;
-    font-size: 2vw;
+button {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+    outline: none !important;
 }
+
 
 img {
     max-width: 100%;
@@ -35,7 +36,6 @@ body {
     margin: 0px;
     overflow-x: hidden;
     background-color: #2b2d2f;
-    scrollbar-width: none;
 }
 
 .content {
@@ -293,13 +293,17 @@ a .nactive {
     overflow-y: hidden;
     white-space: nowrap;
     display: block;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     font-size: 0;
 }
 
+#mission_img {
+  margin-bottom: 40px;
+}
+
 #space_img {
-    padding-bottom: 0px !important;
-    margin-bottom: -5vw;
+    padding-bottom: 0 !important;
+    margin-bottom: 0;
     align-items: center;
 }
 
@@ -358,6 +362,7 @@ a .nactive {
 }
 
 .member p {
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     margin: 0 0 5px 0;
 }
