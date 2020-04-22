@@ -266,7 +266,7 @@ a .nactive {
 #mission {
     background-color: #eee;
     padding-top: 30px;
-    margin-top: -4px;
+    margin-top: -6px;
 }
 
 #mission h1 {
@@ -709,8 +709,26 @@ footer p {
       max-width: 90vw;
     }
 
+    #gal_close{
+      display: none;
+      z-index: 3;
+      color: #eee;
+      background-color: rgba(0,0,0,0);
+      border: none;
+      position: fixed;
+      top: 0px;
+      right: 15px;
+      font-size: 70px;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    #gal_close:hover{
+      color: pink;
+    }
+
     #rightarrow{
-      right: 100px;
+      right: 40px;
     }
 
     #leftarrow{
@@ -737,7 +755,7 @@ footer p {
     #leftarrow, #rightarrow{
       display: none;
       position: fixed;
-      top: 40px;
+      top: 90vh;
       width: 25px;
       height: 25px;
       z-index: 3;
