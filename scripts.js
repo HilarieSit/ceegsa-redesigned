@@ -1,33 +1,11 @@
 $(document).ready(function() {
     $('#header').load('header.html');
-    var alldates = '';
-    var counter = 0;
-    $('#prev_board button').each(function() {
-        alldates += $(this)[0].outerHTML;
-        counter++;
-    });
-    $("#year_nav").append(alldates);
-    $('#year_nav .2019').addClass('active');
-    var starttext = $('#2019 .member_container').html();
-    $("#window").append(starttext);
     $("#about").delay(500).slideDown('slow');
     const observer = lozad();
     observer.observe();
 });
 
-$(document).on('click', 'button', function(event) {
-    event.stopPropagation();
-    event.stopImmediatePropagation();
-    if (!$(this).hasClass('active')){
-      $('#window').empty();
-      var yearstr = $(this).attr("class");
-      var starttext = $('.'+yearstr).siblings('.member_container')[0].outerHTML;
-      $("#window").append(starttext);
-      $('.active').removeClass('active');
-      $(this).addClass('active');
-    }
-});
-
+// HOMEPAGE SLIDESHOW
 var index = -1;
 
 function showImg() {
@@ -43,6 +21,16 @@ function showImg() {
     setTimeout(showImg, 4000);
 }
 
+// CLOSE THINGS
+$(window).on('click', 'button', function() {
+  $('#about').hide();         // close about on homepage
+  $('#gal_window').hide();    // close gal window on gallery
+  $("#gal_close").hide();
+  $('#leftarrow').hide();
+  $('#rightarrow').hide();
+});
+
+// NAVBAR
 $(document).on('click', '#threeline', function(event) {
     event.stopPropagation();
     event.stopImmediatePropagation();
@@ -56,12 +44,6 @@ $(document).on('click', '#close', function(event) {
     event.stopImmediatePropagation();
     $('#modal').fadeOut();
     $('#threeline').show();
-});
-
-$(document).on('click', '#aboutclose', function(event) {
-    event.stopPropagation();
-    event.stopImmediatePropagation();
-    $('#about').fadeOut();
 });
 
 if ($(window).height() < 420) {
@@ -83,6 +65,8 @@ $(window).on('resize', function() {
     }
 });
 
+// GALLERY
+// LAZY LOAD
 $(window).on('click', '.lozad', function() {
   $('#gal_window').empty();
   $('#gal_window').show();
@@ -93,13 +77,6 @@ $(window).on('click', '.lozad', function() {
   var image = $(this)[0].outerHTML;
   $('#gal_window').append(image);
   $(this).addClass('current');
-});
-
-$(window).on('click', '#gal_close', function() {
-  $('#gal_window').hide();
-  $("#gal_close").hide();
-  $('#leftarrow').hide();
-  $('#rightarrow').hide();
 });
 
 $("body").keydown(function(event) {
