@@ -702,7 +702,7 @@ footer p {
     }
 
     #gal_window img{
-      padding: 20vh 0;
+      padding-top: 12vh;
       height: auto;
       max-height: 70vh;
       object-fit: cover;
@@ -744,20 +744,20 @@ footer p {
     }
 
     #leftarrow p{
-      padding-top: 21px;
+      padding-top: 40px;
     }
 
     #rightarrow p{
-      margin-left: 25px;
-      margin-top: 30px;
+      margin-left: 40px;
+      margin-top: 45px;
     }
 
     #leftarrow, #rightarrow{
       display: none;
       position: fixed;
-      top: 90vh;
-      width: 25px;
-      height: 25px;
+      top: 80vh;
+      width: 40px;
+      height: 40px;
       z-index: 3;
       transform: rotate(45deg);
     }
