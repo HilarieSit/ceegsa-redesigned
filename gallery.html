@@ -7,6 +7,7 @@
     <title> Cornell CEE GSA </title>
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
@@ -18,84 +19,151 @@
     </div>
 
     <div class="content">
+        <div id="gal_window"></div>
+        <div id="gal_close">&times;</div>
+        <div id="leftarrow"></div>
+        <div id="rightarrow"></div>
         <div id="gallery">
-            <div class="gal_block">
-                <div class="gal_text">
-                    <p> Bagel Tuesday & Donut Friday
-                        <p>
+            <div id="left">
+                <div class="label">
+                    <p> Wine & Cheese Night 2019 </p>
                 </div>
-                <img class="gal_img" src="images/gallery/bagels.jpg" alt="bagels">
-                <div class="gal_modal">
-                    <span id="close">&times;</span>
-                    <h1> Bagel Tuesday & Donut Friday </h1>
-                    <p> We organize Bagel Tuesday on the 2nd Tuesday of every month and Donut Friday on random Fridays. 🥯🍩 <br> Join us in the Grad Lounge for free bagels/donuts and coffee/tea
-                        <p>
+                <img class="lozad" data-src="images/gallery/2019/winecheese2019a.JPG" alt="social">
+                <img class="lozad" data-src="images/gallery/2019/winecheese2019c.JPG" alt="social">
+                <img class="lozad" data-src="images/gallery/2019/winecheese2019b.JPG" alt="social">
+                <div class="label">
+                    <p> Socials 2019 </p>
                 </div>
+                <img class="lozad" data-src="images/gallery/2019/social2019b.JPG" alt="social">
+                <img class="lozad" data-src="images/gallery/2019/social2019a.JPG" alt="social">
+                <img class="lozad" data-src="images/gallery/2019/social2019c.JPG" alt="social">
+                <div class="label">
+                    <p> Socials 2018 </p>
+                </div>
+                <img class="lozad" data-src="images/gallery/2018/social2018b.jpg" alt="social">
+                <img class="lozad" data-src="images/gallery/2018/social2018a.jpg" alt="social">
+                <img class="lozad" data-src="images/gallery/2018/social2018c.JPG" alt="social">
+                <img class="lozad" data-src="images/gallery/2018/social2018d.JPG" alt="social">
+                <img class="lozad" data-src="images/gallery/2018/social2018e.JPG" alt="social">
+                <img class="lozad" data-src="images/gallery/2018/social2018f.jpg" alt="social">
+                <div class="label">
+                    <p> Bowling 2018 </p>
+                </div>
+                <img class="lozad" data-src="images/gallery/2018/bowling2018a.jpg" alt="social">
+                <img class="lozad" data-src="images/gallery/2018/bowling2018b.jpg" alt="social">
+                <div class="label">
+                    <p> Wine & Cheese Night 2017 </p>
+                </div>
+                <img class="lozad" data-src="images/gallery/2017/winecheese2017a.jpg" alt="social">
+                <img class="lozad" data-src="images/gallery/2017/winecheese2017b.jpg" alt="social">
+                <img class="lozad" data-src="images/gallery/2017/winecheese2017c.jpg" alt="social">
+                <img class="lozad" data-src="images/gallery/2017/winecheese2017d.jpg" alt="social">
+                <img class="lozad" data-src="images/gallery/2017/winecheese2017e.jpg" alt="social">
+                <div class="label">
+                    <p> Townhall 2016 </p>
+                </div>
+                <img class="lozad" data-src="images/gallery/2016/townhall2016a.jpg" alt="social">
+                <img class="lozad" data-src="images/gallery/2016/townhall2016b.jpg" alt="social">
+                <img class="lozad" data-src="images/gallery/2016/townhall2016c.jpg" alt="social">
             </div>
-            <div class="gal_block">
-                <div class="gal_text">
-                    <p> Socials
-                        <p>
+            <div id="center">
+                <div class="label">
+                    <p> Symposium 2019 </p>
                 </div>
-                <img class="gal_img" src="images/gallery/halloween.JPG" alt="hallow">
-            </div>
-            <div class="gal_block">
-                <div class="gal_text">
-                    <p> Collaborations
-                        <p>
+                <img class="lozad" data-src="images/gallery/2019/symposium2019c.jpg" alt="symposium">
+                <img class="lozad" data-src="images/gallery/2019/symposium2019b.jpg" alt="symposium">
+                <img class="lozad" data-src="images/gallery/2019/symposium2019a.jpg" alt="symposium">
+                <img class="lozad" data-src="images/gallery/2019/symposium2019e.jpg" alt="symposium">
+                <img class="lozad" data-src="images/gallery/2019/symposium2019d.jpg" alt="symposium">
+                <div class="label">
+                    <p> Grad Panel 2019 </p>
                 </div>
-                <img class="gal_img" src="images/gallery/winecheese.JPG" alt="winecheese">
-            </div>
-            <div class="gal_block">
-                <div class="gal_text">
-                    <p> Lightning Talks
-                        <p>
+                <img class="lozad" data-src="images/gallery/2019/ugrad2019a.JPG" alt="ugradpanel">
+                <img class="lozad" data-src="images/gallery/2019/ugrad2019b.JPG" alt="ugradpanel">
+                <img class="lozad" data-src="images/gallery/2019/ugrad2019c.JPG" alt="ugradpanel">
+                <div class="label">
+                    <p> Seminar 2019 </p>
                 </div>
-                <img class="gal_img" src="images/gallery/lighttalk.jpg" alt="lighttalk">
-            </div>
-            <div class="gal_block">
-                <div class="gal_text">
-                    <p> Seminars
-                        <p>
+                <img class="lozad" data-src="images/gallery/2019/seminar2019a.jpg" alt="seminar">
+                <div class="label">
+                    <p> Lightning Talks 2018 </p>
                 </div>
-                <img class="gal_img" src="images/gallery/seminar.jpg" alt="seminar">
-            </div>
-            <div class="gal_block">
-                <div class="gal_text">
-                    <p> Wine/Cheese Night & Tour
-                        <p>
+                <img class="lozad" data-src="images/gallery/2018/lighttalk2018a.JPG" alt="light">
+                <img class="lozad" data-src="images/gallery/2018/lighttalk2018b.JPG" alt="light">
+                <img class="lozad" data-src="images/gallery/2018/lighttalk2018c.JPG" alt="light">
+                <div class="label">
+                    <p> Grad Panel 2017 </p>
                 </div>
-                <img class="gal_img" src="images/gallery/winetour3.JPG" alt="winetour3">
-            </div>
-            <div class="gal_block">
-                <div class="gal_text">
-                    <p> Symposium
-                        <p>
+                <img class="lozad" data-src="images/gallery/2017/gradpanel2017a.JPG" alt="ugradpanel">
+                <img class="lozad" data-src="images/gallery/2017/gradpanel2017b.JPG" alt="ugradpanel">
+                <div class="label">
+                    <p> GRASS 2017 </p>
                 </div>
-                <img class="gal_img" src="images/gallery/poster.jpg" alt="poster">
-            </div>
-            <div class="gal_block">
-                <div class="gal_text">
-                    <p> Outreach
-                        <p>
+                <img class="lozad" data-src="images/gallery/2017/grass2017a.JPG" alt="seminar">
+                <img class="lozad" data-src="images/gallery/2017/grass2017b.JPG" alt="seminar">
+                <div class="label">
+                    <p> Symposium 2017 </p>
                 </div>
-                <img class="gal_img" src="images/gallery/ugradpanel.JPG" alt="ugradpanel">
-            </div>
-            <div class="gal_block">
-                <div class="gal_text">
-                    <p> Tours
-                        <p>
+                <img class="lozad" data-src="images/gallery/2017/symposium2017a.JPG" alt="symposium">
+                <img class="lozad" data-src="images/gallery/2017/symposium2017b.JPG" alt="symposium">
+                <img class="lozad" data-src="images/gallery/2017/symposium2017c.JPG" alt="symposium">
+                <img class="lozad" data-src="images/gallery/2017/symposium2017d.JPG" alt="symposium">
+                <img class="lozad" data-src="images/gallery/2017/symposium2017e.JPG" alt="symposium">
+                <div class="label">
+                    <p> Grad Panel 2016 </p>
                 </div>
-                <img class="gal_img" src="images/gallery/farmtour.jpg" alt="farmtour">
+                <img class="lozad" data-src="images/gallery/2016/gradpanel2016d.jpg" alt="ugradpanel">
+                <img class="lozad" data-src="images/gallery/2016/gradpanel2016b.jpg" alt="ugradpanel">
+                <img class="lozad" data-src="images/gallery/2016/gradpanel2016c.jpg" alt="ugradpanel">
             </div>
-            <div class="gal_block">
-                <a href="contact.html">
-                    <div class="gal_text">
-                        <p> Not What You're Looking For?
-                            <p>
-                    </div>
-                </a>
-                <img class="gal_img" src="images/gallery/bbq.JPG" alt="bbq"> </div>
+            <div id="right">
+                <div class="label">
+                    <p> Farm Tour 2019 </p>
+                </div>
+                <img class="lozad" data-src="images/gallery/2019/farmtour2019a.jpg" alt="farmtour">
+                <img class="lozad" data-src="images/gallery/2019/farmtour2019c.jpg" alt="farmtour">
+                <div class="label">
+                    <p> Filtration Plant Tour 2019 </p>
+                </div>
+                <!-- <img class="lozad" data-src="images/gallery/bbq.JPG" alt="bbq"> -->
+                <div class="label">
+                    <p> Wine Tour 2019 </p>
+                </div>
+                <img class="lozad" data-src="images/gallery/2019/winetour2019b.jpg" alt="wt">
+                <img class="lozad" data-src="images/gallery/2019/winetour2019c.jpg" alt="wt">
+                <img class="lozad" data-src="images/gallery/2019/winetour2019d.jpg" alt="wt">
+                <img class="lozad" data-src="images/gallery/2019/winetour2019a.jpg" alt="wt">
+                <div class="label">
+                    <p> Can Drive 2018 </p>
+                </div>
+                <img class="lozad" data-src="images/gallery/2018/candrive2018a.jpg" alt="can">
+                <img class="lozad" data-src="images/gallery/2018/candrive2018b.JPG" alt="can">
+                <div class="label">
+                    <p> Wine Tour 2017 </p>
+                </div>
+                <img class="lozad" data-src="images/gallery/2017/winetour2017a.JPG" alt="wt">
+                <img class="lozad" data-src="images/gallery/2017/winetour2017b.JPG" alt="wt">
+                <img class="lozad" data-src="images/gallery/2017/winetour2017c.JPG" alt="wt">
+                <div class="label">
+                    <p> Bagel Tuesday 2017 </p>
+                </div>
+                <img class="lozad" data-src="images/gallery/2017/bageltues2017a.JPG" alt="bagels">
+                <img class="lozad" data-src="images/gallery/2017/bageltues2017b.JPG" alt="bagels">
+                <img class="lozad" data-src="images/gallery/2017/bageltues2017c.JPG" alt="bagels">
+                <div class="label">
+                    <p> Can Drive 2016 </p>
+                </div>
+                <img class="lozad" data-src="images/gallery/2016/candrive2016a.jpg" alt="can">
+                <img class="lozad" data-src="images/gallery/2016/candrive2016b.jpg" alt="can">
+                <div class="label">
+                    <p> Ithaca Beer Tour 2016 </p>
+                </div>
+                <img class="lozad" data-src="images/gallery/2016/beer2016a.jpg" alt="beer">
+                <img class="lozad" data-src="images/gallery/2016/beer2016b.jpg" alt="beer">
+                <img class="lozad" data-src="images/gallery/2016/beer2016c.jpg" alt="beer">
+                <img class="lozad" data-src="images/gallery/2016/beer2016d.jpg" alt="beer">
+                <img class="lozad" data-src="images/gallery/2016/beer2016e.jpg" alt="beer">
+            </div>
         </div>
     </div>
     <footer>
