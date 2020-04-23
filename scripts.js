@@ -22,6 +22,7 @@ function showImg() {
 }
 
 // CLOSE THINGS
+$('button').css('cursor','pointer');
 $(window).on('click', 'button', function() {
   $('#about').hide();         // close about on homepage
   $('#gal_window').hide();    // close gal window on gallery
@@ -31,6 +32,7 @@ $(window).on('click', 'button', function() {
 });
 
 // NAVBAR
+$('#threeline').css('cursor','pointer');
 $(document).on('click', '#threeline', function(event) {
     event.stopPropagation();
     event.stopImmediatePropagation();
@@ -39,6 +41,7 @@ $(document).on('click', '#threeline', function(event) {
     $(this).hide();
 });
 
+$('#close').css('cursor','pointer');
 $(document).on('click', '#close', function(event) {
     event.stopPropagation();
     event.stopImmediatePropagation();
@@ -118,6 +121,7 @@ $(window).on('click', '#leftarrow', function() {
     observer.observe();
 });
 
+$('#rightarrow').css('cursor','pointer');
 $(window).on('click', '#rightarrow', function() {
   var next = $(".current").nextAll('.lozad:first');
   if ( $(next).length ){

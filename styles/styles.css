@@ -371,7 +371,7 @@ a .nactive {
 }
 
 .member p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
     font-size: 18px;
     margin: 0 0 5px 0;
 }
