@@ -58,7 +58,7 @@ $(window).on('resize', function() {
     if ($(window).width() > 768) {
         $('#modal').hide();
         $('#threeline').hide();
-        $("#about").delay(1000).slideDown('slow');
+        $("#about").delay(500).slideDown();
     } else {
         $('#threeline').show();
     }

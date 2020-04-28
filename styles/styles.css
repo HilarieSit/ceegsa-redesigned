@@ -594,8 +594,8 @@ footer p {
         display: inline;
         text-shadow: 2px 2px #800000;
         float: right;
-        font-size: 30px;
-        padding-top: 5px;
+        font-size: 35px;
+        padding-top: 10px;
         padding-right: 20px;
         cursor: pointer;
     }
