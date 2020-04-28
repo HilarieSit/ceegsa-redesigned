@@ -189,6 +189,10 @@ a .nactive {
     background-color: white;
 }
 
+.slideshow_container{
+  max-height: 84vh;
+}
+
 .slide_img {
     display: none;
 }

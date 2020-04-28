@@ -1,12 +1,13 @@
 $(document).ready(function() {
     $("#about").delay(500).slideDown('slow');
+    setTimeout(showImg, 400);
     const observer = lozad();
     observer.observe();
+    $("#lazyimg").css("display", "none");
 });
 
 // HOMEPAGE SLIDESHOW
 var index = -1;
-
 function showImg() {
     document.getElementById("lazyimg").style.display = "none";
     var images = document.getElementsByClassName("slide_img");
