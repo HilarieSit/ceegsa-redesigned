@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    $('#header').load('header.html');
     $("#about").delay(500).slideDown('slow');
     const observer = lozad();
     observer.observe();
