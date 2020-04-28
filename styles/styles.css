@@ -180,6 +180,12 @@ a .nactive {
 
 
 /* HOMEPAGE */
+.slideshow_container img{
+    max-height: 84vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 0%;
+}
 
 .slide_img {
     display: none;

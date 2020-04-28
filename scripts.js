@@ -9,6 +9,7 @@ $(document).ready(function() {
 var index = -1;
 
 function showImg() {
+    document.getElementById("lazyimg").style.display = "none";
     var images = document.getElementsByClassName("slide_img");
     if (index != -1) {
         images[index].style.display = "none";
