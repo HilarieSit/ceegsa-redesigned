@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $("#about").delay(500).slideDown('slow');
-    setTimeout(showImg, 400);
+    setTimeout(showImg, 500);
+    $(".slideshow_container").css("height", "auto");
     const observer = lozad();
     observer.observe();
-    $("#lazyimg").css("display", "none");
 });
 
 // HOMEPAGE SLIDESHOW

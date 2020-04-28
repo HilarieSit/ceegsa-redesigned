@@ -190,7 +190,8 @@ a .nactive {
 }
 
 .slideshow_container{
-  max-height: 84vh;
+  height: 84vh;
+  background-color: #eee;
 }
 
 .slide_img {
