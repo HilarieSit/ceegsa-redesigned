@@ -46,6 +46,7 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+
     /* background-color: #B31B1B; */
 }
 
@@ -180,11 +181,13 @@ a .nactive {
 
 
 /* HOMEPAGE */
-.slideshow_container img{
+#lazyimg{
+    margin-top: 120px;
     max-height: 84vh;
     width: 100%;
     object-fit: cover;
     object-position: 50% 0%;
+    background-color: white;
 }
 
 .slide_img {
